@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/main.js"></script>
+  <title>Browser extensions manager UI</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="header-logo">
+        <img class="header-logo__icon" src="./images/logo.svg" alt="" aria-hidden="true">
+
+        <span class="header-logo__text">Extensions</span>
+      </a>
+      <button class="theme-toggle" type="button" aria-label="Switch theme">
+        <img src="images/icon-moon.svg" alt="" class="theme-toggle__icon" aria-hidden="true">
+      </button>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="extensions" aria-labelledby="extensions-title">
+      <div class="container extensioins-container">
+        <div class="extensions-header">
+          <h1 class="extensions-title" id="extensions-title">Extensions List</h1>
+          <div class="extensions-filter" aria-label="Filter extensions">
+            <button class="extensions-filter__button extensions-filter__button--active" type="button"
+              aria-pressed="true" data-filter="all">All</button>
+            <button class="extensions-filter__button" type="button" aria-pressed="false"
+              data-filter="active">Active</button>
+            <button class="extensions-filter__button" type="button" aria-pressed="false"
+              data-filter="inactive">Inactive</button>
+          </div>
+        </div>
+        <ul class="extensions-list" aria-label="Browser extensions list"></ul>
+      </div>
+    </section>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" class="attribution-link">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/shigureyn" class="attribution-link">Shigureyn</a>.
+  </footer>
+</body>
+
+</html>
