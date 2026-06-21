@@ -1,4 +1,4 @@
-const DATA_URL = "./data.json";
+const DATA_URL = new URL("../data.json", import.meta.url);
 
 export async function loadExtensions() {
   const response = await fetch(DATA_URL);
