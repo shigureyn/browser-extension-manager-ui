@@ -1,4 +1,4 @@
-const DATA_URL = "../data.json";
+const DATA_URL = "./data.json";
 
 export async function loadExtensions() {
   const response = await fetch(DATA_URL);
